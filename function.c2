@@ -1,14 +1,21 @@
-#include<stdio.h>
-int main(){
-    int i = 0;
-    while(i < 10){
-        if(i == 6){
-            i++;
-            continue;
-        }
-        printf("%d\n", i);
-        i++;
-    }
+#include <stdio.h>
+
+// Function declaration
+int add(int a, int b);
+
+int main() {
+    int result;
+
+    // Function call
+    result = add(10, 20);
+
+    printf("Sum = %d", result);
     return 0;
-    
+}
+
+// Function definition
+int add(int a, int b) {
+    int sum;
+    sum = a + b;
+    return sum;
 }
